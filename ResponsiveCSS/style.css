@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+main {
+    max-width: 1200px;
+}
+
+h2 {
+    color: #776eea;
+    margin-bottom: 25px;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    
+    gap: 20px;
+}
+
+.item {
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #543fff;
+    color: salmon;
+}
