@@ -17,14 +17,15 @@ main {
 h2 {
     color: #776eea;
     margin-bottom: 25px;
+    margin: 20px;
 }
 
 .grid-box {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 100px 100px 100px 100px 100px;
-    
     gap: 20px;
+    margin: 20px;
 }
 
 .item {
@@ -35,4 +36,11 @@ h2 {
     border-radius: 12px;
     background-color: #543fff;
     color: salmon;
+    
+}
+
+@media(max-width: 600px) {
+    .grid-box {
+        grid-template-columns: repeat(2, 1fr)
+    }
 }
