@@ -1,0 +1,81 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.main__container {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3ecec;
+}
+
+.example__card {
+   width: 90%;
+   margin: 25px;
+   padding: 25px;
+   background-color: rgba(74, 132, 26, 0.4);
+   border-radius: 12px;
+
+}
+
+.example__box {
+    display: flex;
+    gap: 35px;
+    justify-content: space-around;
+}
+
+.example__sample {
+    display: flex;
+    width: 250px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: salmon;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadow--basic {
+    box-shadow: 6px 12px 4px rgb(146, 76, 11); 
+}
+
+.shadow--blur {
+    box-shadow: 12px 8px 15px rgba(73, 42, 9, 0.7);
+}
+
+.shadow--multiple {
+    box-shadow: 
+    10px 8px 15px rgba(226, 87, 12, 0.7),
+    10px -8px 15px rgba(229, 40, 216, 0.7),
+    15px -8px 15px rgba(60, 41, 156, 0.7),
+    -15px 8px 15px rgba(74, 42, 121, 0.7);
+}  
+
+.shadow--basic--text {
+    text-shadow: 0.5px 2px 3px #195ede;
+}
+
+.shadow--glow {
+    text-shadow:
+    2px 3px 2px #887eea,
+    -2px -3px 2px #887eea;
+}
+
+.border--radius {
+    border-radius: 25px 5px;
+}
+
+.border--gradient {
+    border: 10px solid;
+    border-image: linear-gradient(45deg, #958ef7, #334aaa) 1;
+}
+
+.border--outline {
+    outline: 10px solid #775fff;
+    outline-offset: 8px;
+}
+
+.sample--filter {
+    filter: blur(2px);
+}
