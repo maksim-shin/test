@@ -1,0 +1,47 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3ecec;
+}
+
+.example__card {
+   width: 90%;
+   margin: 25px;
+   padding: 25px;
+   background-color: rgba(74, 132, 26, 0.4);
+   border-radius: 12px;
+
+}
+
+.example__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: space-around;
+}
+
+.example__sample {
+    display: flex;
+    width: 250px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: salmon;
+    justify-content: center;
+    align-items: center;
+}
+
+.sample--translate {
+    transform: translate(10px, 20px);
+}
+
+.sample--rotate {
+    transform: rotate(35deg);
+}
+
+.sample--scale {
+    transform: scale(1.2);
+}
+
+.sample--skew {
+    transform: skew(12deg, 10deg);
+}
