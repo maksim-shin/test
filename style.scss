@@ -1,0 +1,59 @@
+@use "sass:color";
+
+$primary-color: rgb(39, 122, 34);
+$primary-hover: rgb(96, 16, 97);
+$swiper-color: white;
+
+$border-radius: 5px;
+$swiper-radius: 10px;
+$btn-padding: 20px 10px;
+$swiper-margin: 20px 0;
+
+@mixin button-style {
+    padding: $btn-padding;
+    border: none;
+    border-radius: $border-radius;
+    background-color: $primary-color;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary-hover;
+    }
+}
+
+@mixin swiper-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+@mixin swiper-slide-style {
+    @include swiper-center;
+    
+    height: 200px;
+   
+    background-color: $primary-color;
+    border-radius: $swiper-radius;
+}
+
+body {
+    background-color: aqua;
+
+}
+
+#myButton {
+
+  @include button-style;  
+}
+
+.swiper {
+    @include swiper-center;
+    margin: $swiper-margin;
+
+}
+
+.swiper-slide {
+    @include swiper-slide-style;
+}
